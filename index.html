@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jysfie Art</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lacquer&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        
+        <div class="container">
+            
+            <!-- Logo -->
+            <h1 class="logo">
+                <a href="#home">
+                    <img src="img/firma.png" alt="Jysfie Logo">
+                </a>
+            </h1>
+            
+            <!-- Barra de navegación -->
+            <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#commissions">Commissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#tos">ToS</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    </header>
+    
+    <main>
+    
+    <!-- Sección de introducción -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+
+            <div class="hero-text">
+                <h2>hi! i'm jysfie!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt inventore facere fugiat id quo ratione sequi, in sapiente voluptatem eveniet ex cum dolorum iure.</p>
+            
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="hero-btn">See my work</a>
+                    <a href="#contact" class="hero-btn">Contact me</a>
+                </div>
+            </div>
+            
+            <div class="hero-img">
+                <img src="img/chibi-char.png" alt="Jysfie-chibi-character">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seccion de portafolio -->
+    <section class="portfolio-preview" id="portfolio-preview">
+        <h2 class="section-title">portfolio</h2>
+        
+        <!-- Imagenes -->
+        <div class="preview-gallery">
+            <img src="img/0eb2686b_original.jpg" alt="Eivan illustration">
+            <img src="img/c7903bca_original.jpg" alt="Kitsune Princess Character">
+            <img src="img/a69aa458_original.jpg" alt="Shi Illustration">
+        </div>
+        
+        <!-- Botón -->
+        <div class="port-prev-btn">
+            <a href="#" class="btn">See all</a>
+        </div>
+    </section>
+
+    <!-- Sección de comisiones -->
+    <section class="commissions-preview" id="commissions-preview">
+        <h2 class="section-title">commissions</h2>
+
+        <div class="cards-container container" >
+        
+            <!-- Tarjeta 1: Full Body -->
+            <div class="card">
+                <img src="img/49fc19aa_original.jpg" alt="Full body character">
+                <div class="card-content">
+                    <h3>full body</h3>
+                    <h4>Includes:</h4>
+                    <p>One character full body full rendered</p>
+                    <h4>Details:</h4>
+                    <p>The file delivered can be PNG or JPG Two files delivered, one with simple flat background and one without background<br>
+                        4000x6000 300 dpi <br>
+                        <b>WILL DO:</b> characters, OC, fanart, dnd character, mecha/armor<br>
+                        <b>WON'T DO:</b> hateful art, gore, fetishes</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2: Half Body -->
+            <div class="card">
+                <img src="img/5e01fe1a_original.jpg" alt="Half body character">
+                <div class="card-content">
+                    <h3>half body</h3>
+                    <h4>Includes:</h4>
+                    <p>One half body or thigh up character full rendered! OCs or fanart, I can do both</p>
+                    <h4>Details:</h4>
+                    <p>The file delivered can be PNG or JPG<br>
+                        4000x6000 300dpi</p>
+                    <a href="#" class="btn">Buy now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">contact</h2>
+
+        <div class="container contact-container">
+            <div class="contact-form">
+                <h3>looking for something else?</h3>
+                <form action="https://formspree.io/f/mdabrnog" method="post" enctype="multipart/form-data">
+                    <div class="contact-label">
+                    <label>Name:</label>
+                    </div>
+                    <input type="text" placeholder="Name" id="name" name="name" required>
+
+                    <div class="contact-label">
+                    <label>Email:</label>
+                    </div>
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+
+                    <div class="contact-label">
+                    <label>Share your ideas!</label>
+                    </div>
+                    <textarea placeholder="Message" name="message" required></textarea>
+
+                    <button type="submit" class="btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+    <div class="footer-container container">
+
+        <div class="footer-box">
+            <h3>links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#commissions">Commissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#tos">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>social media</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/jysfie"><img src="img/logotipo-de-instagram.png" alt="Instagram icon"></a>
+                <a href="https://x.com/jysfieart"><img src="img/gorjeo.png" alt="X icon"></a>
+                <a href="https://www.tiktok.com/@jysfie.art"><img src="img/tiktok_icon.png" alt="Tiktok icon"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Jysfie |  All rights reserved
+        </p>
+    </div>
+
+</footer>
+
+</body>
+</html>

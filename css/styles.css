@@ -1,0 +1,280 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7b56ca;
+    font-family: "Google Sans", sans-serif;
+    color: #32303e;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-title {
+    font-family: "Lacquer", system-ui;
+    font-size: 45px;
+    color: #c2b6a7;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Header */
+.header {
+    background: #32303e;
+    padding: 24px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    font-size: 16px;
+    color: #c2b6a7;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+}
+
+
+/* Sección hero */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    align-items: center;
+    }
+
+.hero-text {
+    font-family: "Lacquer", system-ui;
+    font-size: 20px;
+    color: #c2b6a7;
+}
+
+.hero-text {
+    grid-column: span 6;
+}
+
+.hero-img {
+    grid-column: span 6;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.hero-img img {
+    height: 485px;
+    width: 485px;
+    object-fit: cover;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hero-btn{
+    background-color: #392a59;
+    color: #c2b6a7;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-family: "Google Sans", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: linear-gradient(135deg, #c2b6a7, #736254);
+    color: #392a59;
+}
+
+/* Sección portfolio preview */
+
+.preview-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.preview-gallery img {
+    width: 282px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.preview-gallery img:hover {
+    transform: translateY(-8px);
+}
+
+.port-prev-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.btn {
+    background-color: #392a59;
+    color: #c2b6a7;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #c2b6a7, #736254);
+    color: #392a59;
+}
+
+/* Sección de comisiones */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    justify-content: center;
+}
+
+.card{
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+h3 {
+    font-family: "Lacquer", system-ui;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.card-content .btn{
+    margin-top: auto;
+}
+
+/* Sección de contacto */
+
+.contact {
+    padding-bottom: 40px;
+}
+
+.contact-container {
+    background-color: #c2b6a7;
+    border-radius: 10px;
+    padding: 2%;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #392a59;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #32303e;
+    padding: 40px 20px 20px;
+    color: #c2b6a7;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box a {
+    text-decoration: none;
+    color: #c2b6a7;
+    transition: 0.3s;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.social-links img {
+    width: 30px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-top: 1px solid #c2b6a7;
+}
